@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<style type="text/css">
+	@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+	
+	p,h3{
+		color: white;
+		text-shadow: 2px 2px 2px rgb(66, 66, 66);
+		font-family: Verdana, Geneva, Tahoma, sans-serif;
+	}
+	body{
+		margin: 0px;
+		padding: 0px;
+	}
+	main{
+		display: flex;
+		flex-wrap: wrap;
+		margin-top: 20px;
+		max-width: 1000px;
+		margin: 0 auto;
+	}
+	main > div{
+		flex: 1 1 300px;
+	}
+	.header{
+		top: 0%;
+		width: 100%;
+		height: 50px;
+		background-color: rgb(63, 63, 63);
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	
+	.menu{
+		display: flex;
+		flex-wrap:wrap;
+	}
+	.menu > button{
+		flex: 1 1;
+		margin-right: 15px;
+	}
+	button{
+		width: 70px;
+		background-color: rgb(255, 40, 40);
+		border: solid 1px rgb(255, 255, 255);
+		color: white;
+		font-family: Verdana, Geneva, Tahoma, sans-serif;
+		border-radius: 5px;
+	}
+	button:hover{
+		background-color: red;
+		font-weight: 900;
+
+	}
+	@media (min-width:320px) and (max-width:480px) {
+		.header-cotil{
+			font-size: 12px;
+		}
+		body{
+			font-size: 0.8em;
+		}
+		.header{
+			height: 100px;
+			justify-content: space-around;
+		}
+		.menu{
+			flex-direction: column;
+		}
+	}
+	@media (min-width:481px) and (max-width:767px){
+		.logo{
+			font-size: 18px;
+		}
+		body{
+			font-size: 0.9em;
+		}
+		.header{
+			height: 80px;
+			justify-content: space-around;
+		}
+		
+	}
+	@media (min-width:768px) and (max-width:1024px){
+		.logo{
+			font-size: 25px;
+		}
+		
+		.header{
+			height: 60px;
+			justify-content: space-around;
+		}
+	}
+	@media (min-width:1024px) {
+		.logo{
+			font-size: 30px;
+		}
+	}
+
+	@media print{
+	body{
+		background-color: rgb(255, 255, 255);
+		font-family: Arial, Helvetica, sans-serif;	
+	}
+	.imp{
+		display: none;
+	}
+	.menu{
+		display: none;
+	}
+	h3{	
+		font-family: Arial, Helvetica, sans-serif;
+		color: black;
+		font-size: 15px;
+	}
+	p{	
+		font-family: Arial, Helvetica, sans-serif;
+		color: black;
+	}
+	
+}
+.imp {
+	margin: 2em;
+	text-align: right;
+}
+	
+	#DS{
+		margin: 20px;
+		height: 120px;
+		border: solid 1px;
+		border-color: rgb(0, 0, 0);
+		border-radius: 20px;
+		box-shadow: 5px 5px 5px 5px gray;
+		background-image: url(https://img.freepik.com/fotos-gratis/desenvolvendo-programador-desenvolvimento-web-design-e-codificacao-de-tecnologias_18497-1090.jpg?size=626&ext=jpg);
+	}
+	
+	#EN{
+		margin: 20px;
+		height: 120px;
+		border: solid 1px;
+		border-color: black;
+		border-radius: 20px;
+		box-shadow: 5px 5px 5px 5px gray;
+		text-align: justify;
+		background-image: url(enfermagem.jpg);
+	}
+	
+	a:link{
+		text-decoration: none;
+	}
+	.curso:hover{
+		transform: scale(1.1,1.1);	
+	}
+	
+	#ME{
+		margin: 20px;
+		height: 120px;
+		border: solid 1px;
+		border-color: black;
+		border-radius: 20px;
+		box-shadow: 5px 5px 5px 5px gray;
+		background-image: url(https://www.adslzone.net/app/uploads-adslzone.net/2015/11/Engranajes-de-Windows-480x251.png);
+	}
+
+	#QU{
+		margin: 20px;
+		height: 120px;
+		border: solid 1px;
+		border-color: black;
+		border-radius: 20px;
+		box-shadow: 5px 5px 5px 5px gray;
+		background-image: url(qualidade.jpg);
+	}
+
+	#ED{
+		margin: 20px;
+		height: 120px;
+		border: solid 1px;
+		border-color: black;
+		border-radius: 20px;
+		box-shadow: 5px 5px 5px 5px gray;
+		background-image: url(https://th.bing.com/th/id/OIP.J5sVabU9e5t1IGAchD_TOQHaE8?pid=ImgDet&rs=1);
+	}
+
+	#GE{
+		margin: 20px;
+		height: 120px;
+		border: solid 1px;
+		border-color: black;
+		border-radius: 20px;
+		box-shadow: 5px 5px 5px 5px gray;
+		background-image: url(https://video-images.vice.com/articles/58b5633006c21a61f490e80e/lede/1488283470494-shutterstock_124822267.jpeg?crop=0.928888888888889xw:1xh;center,center&resize=1200:*);
+	}
+</style>
+<html>
+<head>
+	<link rel="icon" href="cotil.png" type="image/x-icon" sizes="32x32">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bem-Vindo ao COTIL!</title>
+</head>
+<body>
+	<header class="header">
+		<div class="logo">
+			<p id="header-cotil" style="font-family: 'Luckiest Guy', cursive;margin-left: 15px;">COTIL | UNICAMP</p>
+		</div>
+
+		<div class="menu" style="color: white;">
+			<button>Menu</button> <button>Contato</button>
+			<button>Produto</button> <button>Login</button>
+		</div>
+	</header>
+	<div class="imp">
+		<a onclick='window.print()';>
+			<img src="impressora.png" width="24px">
+		</a>
+	</div>
+<main>
+	
+	<div id="DS">
+		<a href="https://www.cotil.unicamp.br/desenvolvimento_de_sistemas/" target="_blank">
+		<h3 align="center" class="curso">Desenvolvimendo De Sistemas</h3>
+		<small><p align="center" class="curso">Desenvolvendo o futuro</p></small>
+		</a>
+	</div>
+	
+	<div id="EN">
+		<a href="https://www.cotil.unicamp.br/enfermagem/" target="_blank">
+		<h3 align="center" class="curso">Enfermagem</h3>
+		<small><p align="center" class="curso">Cuidar com ciência e arte</p></small>
+		</a>
+	</div>
+
+	<div id="ME">
+		<a href="https://www.cotil.unicamp.br/mecanica/" target="_blank">
+		<h3 align="center" class="curso">Mecânica</h3>
+		<small><p align="center" class="curso">Projete e execute</p></small>
+		</a>
+	</div>
+
+	<div id="QU">
+		<a href="https://www.cotil.unicamp.br/mecanica/" target="_blank">
+		<h3 align="center" class="curso">Qualidade</h3>
+		<small><p align="center" class="curso">Gestão e processos</p></small>
+		</a>
+	</div>
+
+	<div id="ED">
+		<a href="https://www.cotil.unicamp.br/edificacoes/" target="_blank">
+		<h3 align="center" class="curso">Edificações</h3>
+		<small><p align="center" class="curso">Construindo o futuro</p></small>
+		</a>
+	</div>
+
+	<div id="GE">
+		<a href="https://www.cotil.unicamp.br/geodesia/" target="_blank">
+		<h3 align="center" class="curso">Geodésia e Cartografia</h3>
+		<small><p align="center" class="curso">Mapeando caminhos</p></small>
+		</a>
+	</div>
+
+</main>
+</body>
+</html>
